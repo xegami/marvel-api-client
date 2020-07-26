@@ -1,6 +1,6 @@
 # marvel-api-client
 
-Cliente Android en Kotlin que recibe datos de http://developer.marvel.com y los muestra en pantalla.
+Cliente Android en Kotlin que recibe datos de https://developer.marvel.com y los muestra en pantalla.
 
 Las librerías principales que he usado para definir la estructura del proyecto han sido Picasso (carga de imágenes), Eventbus (comunicación por eventos) y Retrofit (cliente HTTP).
 
