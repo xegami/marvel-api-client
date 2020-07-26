@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">excibit</string>
+    <string name="search_by_name">Search by name</string>
+    <string name="error_get_character_details">Error trying to get the character details.</string>
+    <string name="error_get_characters">Error trying to get the characters.</string>
+    <string name="error_call">Connection error.</string>
+    <string name="no_description">No description yet.</string>
+    <string name="comics">Comics</string>
+</resources>
