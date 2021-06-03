@@ -1,4 +1,4 @@
-package com.xegami.excibit.rest.event
+package com.xegami.mac.rest.event
 
 import org.greenrobot.eventbus.EventBus
 

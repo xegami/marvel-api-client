@@ -1,4 +1,4 @@
-package com.xegami.excibit.adapter
+package com.xegami.mac.adapter
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -8,9 +8,9 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.squareup.picasso.Picasso
-import com.xegami.excibit.R
-import com.xegami.excibit.listener.CharacterClickListener
-import com.xegami.excibit.rest.dto.CharacterDTO
+import com.xegami.mac.R
+import com.xegami.mac.listener.CharacterClickListener
+import com.xegami.mac.rest.dto.CharacterDTO
 
 class CharacterRecyclerViewAdapter(
     private val context: Context,

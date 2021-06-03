@@ -1,9 +1,8 @@
-package com.xegami.excibit.rest.operation
+package com.xegami.mac.rest.operation
 
 import com.google.gson.JsonElement
 import retrofit2.Call
 import retrofit2.http.GET
-import retrofit2.http.Header
 import retrofit2.http.Path
 import retrofit2.http.Query
 

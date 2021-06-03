@@ -1,4 +1,4 @@
-package com.xegami.excibit.rest
+package com.xegami.mac.rest
 
 import okhttp3.OkHttpClient
 import retrofit2.Retrofit

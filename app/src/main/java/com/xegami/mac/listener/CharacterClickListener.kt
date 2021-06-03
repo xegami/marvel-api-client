@@ -1,6 +1,6 @@
-package com.xegami.excibit.listener
+package com.xegami.mac.listener
 
-import com.xegami.excibit.rest.dto.CharacterDTO
+import com.xegami.mac.rest.dto.CharacterDTO
 
 interface CharacterClickListener {
 

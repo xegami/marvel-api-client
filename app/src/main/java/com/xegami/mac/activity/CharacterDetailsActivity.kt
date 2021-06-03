@@ -1,24 +1,12 @@
-package com.xegami.excibit.activity
+package com.xegami.mac.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ArrayAdapter
-import android.widget.SearchView
-import androidx.recyclerview.widget.LinearLayoutManager
-import com.google.android.material.snackbar.Snackbar
 import com.squareup.picasso.Picasso
-import com.xegami.excibit.R
-import com.xegami.excibit.adapter.CharacterRecyclerViewAdapter
-import com.xegami.excibit.listener.CharacterClickListener
-import com.xegami.excibit.rest.controller.CharacterController
-import com.xegami.excibit.rest.dto.CharacterDTO
-import com.xegami.excibit.rest.event.ErrorEvent
-import com.xegami.excibit.rest.event.GetCharactersEvent
+import com.xegami.mac.R
+import com.xegami.mac.rest.dto.CharacterDTO
 import kotlinx.android.synthetic.main.activity_character_details.*
-import kotlinx.android.synthetic.main.activity_main.*
-import org.greenrobot.eventbus.EventBus
-import org.greenrobot.eventbus.Subscribe
-import org.greenrobot.eventbus.ThreadMode
 
 class CharacterDetailsActivity : AppCompatActivity() {
 

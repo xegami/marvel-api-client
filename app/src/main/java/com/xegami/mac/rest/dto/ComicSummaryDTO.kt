@@ -1,4 +1,4 @@
-package com.xegami.excibit.rest.dto
+package com.xegami.mac.rest.dto
 
 import java.io.Serializable
 

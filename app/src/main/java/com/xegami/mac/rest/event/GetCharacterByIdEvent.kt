@@ -1,6 +1,6 @@
-package com.xegami.excibit.rest.event
+package com.xegami.mac.rest.event
 
-import com.xegami.excibit.rest.dto.CharacterDTO
+import com.xegami.mac.rest.dto.CharacterDTO
 import java.io.Serializable
 
 data class GetCharacterByIdEvent(val character: CharacterDTO) : BaseEvent(), Serializable

@@ -1,3 +1,3 @@
-package com.xegami.excibit.rest.event
+package com.xegami.mac.rest.event
 
 data class ErrorEvent(val message: String) : BaseEvent()

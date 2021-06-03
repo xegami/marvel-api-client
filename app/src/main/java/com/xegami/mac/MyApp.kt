@@ -1,4 +1,4 @@
-package com.xegami.excibit
+package com.xegami.mac
 
 import android.app.Application
 

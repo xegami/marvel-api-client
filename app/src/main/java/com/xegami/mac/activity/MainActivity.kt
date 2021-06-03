@@ -1,19 +1,18 @@
-package com.xegami.excibit.activity
+package com.xegami.mac.activity
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.SearchView
-import androidx.recyclerview.widget.LinearLayoutManager
 import com.google.android.material.snackbar.Snackbar
-import com.xegami.excibit.R
-import com.xegami.excibit.adapter.CharacterRecyclerViewAdapter
-import com.xegami.excibit.listener.CharacterClickListener
-import com.xegami.excibit.rest.controller.CharacterController
-import com.xegami.excibit.rest.dto.CharacterDTO
-import com.xegami.excibit.rest.event.ErrorEvent
-import com.xegami.excibit.rest.event.GetCharacterByIdEvent
-import com.xegami.excibit.rest.event.GetCharactersEvent
+import com.xegami.mac.R
+import com.xegami.mac.adapter.CharacterRecyclerViewAdapter
+import com.xegami.mac.listener.CharacterClickListener
+import com.xegami.mac.rest.controller.CharacterController
+import com.xegami.mac.rest.dto.CharacterDTO
+import com.xegami.mac.rest.event.ErrorEvent
+import com.xegami.mac.rest.event.GetCharacterByIdEvent
+import com.xegami.mac.rest.event.GetCharactersEvent
 import kotlinx.android.synthetic.main.activity_main.*
 import org.greenrobot.eventbus.EventBus
 import org.greenrobot.eventbus.Subscribe
@@ -29,7 +28,9 @@ class MainActivity : AppCompatActivity(), CharacterClickListener {
         setContentView(R.layout.activity_main)
 
         CharacterController.instance.getCharacters(100)
+    }
 
+    private fun setupFilter() {
         sv_activity_main_filter.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
             override fun onQueryTextSubmit(p0: String?): Boolean {
                 adapter.filterByName(p0!!)
@@ -49,6 +50,7 @@ class MainActivity : AppCompatActivity(), CharacterClickListener {
         adapter = CharacterRecyclerViewAdapter(this, characters.toMutableList(), cListener = this)
 
         rv_activity_main_characters.adapter = adapter
+        setupFilter()
     }
 
     @Subscribe(threadMode = ThreadMode.MAIN)

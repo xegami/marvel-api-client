@@ -1,16 +1,15 @@
-package com.xegami.excibit.rest.controller
+package com.xegami.mac.rest.controller
 
 import com.google.gson.Gson
 import com.google.gson.JsonElement
-import com.xegami.excibit.MyApp
-import com.xegami.excibit.R
-import com.xegami.excibit.rest.RetrofitInstance
-import com.xegami.excibit.rest.dto.CharacterDTO
-import com.xegami.excibit.rest.dto.CharacterDataWrapperDTO
-import com.xegami.excibit.rest.event.ErrorEvent
-import com.xegami.excibit.rest.event.GetCharacterByIdEvent
-import com.xegami.excibit.rest.event.GetCharactersEvent
-import com.xegami.excibit.rest.operation.CharacterOperations
+import com.xegami.mac.MyApp
+import com.xegami.mac.R
+import com.xegami.mac.rest.RetrofitInstance
+import com.xegami.mac.rest.dto.CharacterDataWrapperDTO
+import com.xegami.mac.rest.event.ErrorEvent
+import com.xegami.mac.rest.event.GetCharacterByIdEvent
+import com.xegami.mac.rest.event.GetCharactersEvent
+import com.xegami.mac.rest.operation.CharacterOperations
 import org.apache.commons.codec.digest.DigestUtils
 import retrofit2.Call
 import retrofit2.Callback
